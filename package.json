@@ -3,13 +3,13 @@
     "version": "1.0.0",
     "description": "A theme featuring typewriter typography",
     "repository": {
-    "type": "git",
-    "url": "https://github.com/bernaborrero"
+        "type": "git",
+        "url": "https://github.com/bernaborrero/typewriter"
     },
     "author": "Bernabé Borrero <bernabeborrero@gmail.com>",
     "bugs": {
-    "url": "https://github.com/bernaborrero"
+        "url": "https://github.com/bernaborrero/typewriter/issues"
     },
-    "homepage": "https://github.com/bernaborrero",
+    "homepage": "https://github.com/bernaborrero/typewriter",
     "private": true
 }

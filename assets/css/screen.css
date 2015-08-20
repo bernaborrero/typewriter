@@ -1,0 +1,118 @@
+@font-face {
+	font-family: Traveling;
+	src: url(../fonts/TravelingTypewriter.ttf);
+}
+
+@font-face {
+	font-family: Albertsthal;
+	src: url(../fonts/AlbertsthalTypewriter.ttf);
+}
+
+/* General styles */
+
+body {
+	font-family: Traveling, Helvetica-Neue, Helvetica, sans-serif;
+}
+
+a {
+	color: #663300;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #993300;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 40px;
+	border-left: 1px dotted #000;
+	font-size: 24px;
+}
+
+hr {
+	margin: 40px 0;
+	border: none;
+	text-align: center;
+	font-size: 40px;
+}
+
+hr:before {
+	content: '§';
+}
+
+/* Specific styles */
+
+.wrapper {
+	margin: 0 40px;
+}
+
+.center {
+	text-align: center;
+}
+
+header {
+	text-align: center;
+}
+
+header .title {
+	font-family: Albertsthal;
+	font-size: 60px;
+	margin: 40px 0 0 0;
+}
+
+.tag-template header .title {
+	font-size: 12vw;
+}
+
+header .caption {
+	margin-top: 0;
+	font-style: italic;
+}
+
+.excerpt {
+	margin-top: 60px;
+}
+
+.home {
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+article .content {
+	margin-top: 40px;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+article .content img {
+	width: 100%;
+}
+
+.pagination {
+	text-align: center;
+	margin-top: 60px;
+}
+
+footer.wrapper {
+	margin-top: 80px;
+	text-align: center;
+}
+
+.home-template footer.wrapper,
+.archive-template footer.wrapper,
+.author-template footer.wrapper,
+.tag-template footer.wrapper {
+	margin-top: 20px;
+}
+
+
+/* Medias */
+
+@media (min-width: 490px) {
+	header .title, .tag-template header .title {
+		font-size: 80px;
+	}
+}

@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{#post}}
+
+    {{> post-meta}}
+
+    <div class="home">
+        <a href="{{@blog.url}}">☺</a>
+    </div>
+
+    <article class="wrapper">
+        <div class="container">
+            <header>
+                <h1 class="title">{{title}}</h1>
+                <h2 class="caption">
+                    Posted on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='MMMM DD, YYYY'}}</time>{{#if tags}} under {{tags}}{{/if}}.
+                </h2>
+            </header>
+            <div class="content">
+                {{content}}
+            </div>
+        </div>
+    </article>
+
+    <div class="meta wrapper clearfix">
+        <div class="container">
+            <div class="author clearfix">
+                {{#author}}
+                    <div class="info">
+                        – <a href="{{url}}" class="name">{{name}}</a>
+                    </div>
+                {{/author}}
+            </div>
+        </div>
+    </div>
+
+{{/post}}
